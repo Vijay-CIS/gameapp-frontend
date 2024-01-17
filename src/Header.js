@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { FaTrashAlt } from "react-icons/fa"
 
 const Header = () => {
   
@@ -31,7 +32,7 @@ const Header = () => {
        {items.map( (item) => (<li>
         <input type='checkbox' checked={item.checked}/>
         <label>{item.item}</label>
-        <button>Remove</button>
+        <FaTrashAlt/>
        </li>))}
     </ul>
    </main>
